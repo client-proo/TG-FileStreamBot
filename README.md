@@ -1,7 +1,14 @@
 <hr>
 
-> [!WARNING]
-> This project is being rewritten to [golang](https://github.com/EverythingSuckz/TG-FileStreamBot/tree/golang).
+> [!NOTE]
+> **This fork is no longer maintained.**
+> Feel free to explore my other repositories:
+> - [TG-FileStreamBot](https://github.com/SpringsFern/TG-FileStreamBot)
+> - [tgfilestream](https://github.com/DeekshithSH/tgfilestream)
+>
+> Or use the original project:
+> [EverythingSuckz/TG-FileStreamBot](https://github.com/EverythingSuckz/TG-FileStreamBot)
+
 <hr>
 <h1 align="center">Telegram File Stream Bot</h1>
 <p align="center">
