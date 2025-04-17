@@ -38,7 +38,7 @@ async def media_receive_handler(_, m: Message):
         markup.append(InlineKeyboardButton("🖥 پخش زنده", url=stream_link))
     try:
         await m.reply_text(
-            text="""<i><u>لـیـنـک فـایـل شـمـا سـاخـتـه شـد ✅</u></i>\n\n<b>📂 نام فایل :</b> <i>{}</i>\n\n<b>📦 حجم فایل :</b> <i>{}</i>\n\n<b>📥 لینک دانلود :</b> <i>{}</i>\n\n<b> 🖥پخش زنده  :</b> <i>{}</i>\n\n<b>🚸 توجه : لینک شما پس از 24 ساعت منقضی خواهد شد</b>""",
+            text="""<i><u>لـیـنـک فـایـل شـمـا سـاخـتـه شـد ✅</u></i>\n\n<b>📂 نام فایل :</b> <i>{}</i>\n\n<b>📦 حجم فایل :</b> <i>{}</i>\n\n<b>📥 لینک دانلود :</b> <i>{}</i>\n\n<b> 🖥 پخش زنده  :</b> <i>{}</i>\n\n<b>🚸 توجه : لینک شما پس از 24 ساعت منقضی خواهد شد</b>""",
             quote=True,
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup([markup]),
