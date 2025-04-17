@@ -33,9 +33,9 @@ async def media_receive_handler(_, m: Message):
     stream_link = f"{Var.URL}{log_msg.id}/{quote_plus(get_name(m))}?hash={file_hash}"
     short_link = f"{Var.URL}{file_hash}{log_msg.id}"
     logger.info("Generated link: %s for %s", stream_link, m.from_user.first_name)
-    markup = [InlineKeyboardButton("Download", url=stream_link+"&d=true")]
+    markup = [InlineKeyboardButton("📥 دانلود", url=stream_link+"&d=true")]
     if set(mimetype.split("/")) & {"video","audio","pdf"}:
-        markup.append(InlineKeyboardButton("Stream", url=stream_link))
+        markup.append(InlineKeyboardButton("🖥 پخش زنده", url=stream_link))
     try:
         await m.reply_text(
             text="""<i><u>لـیـنـک فـایـل شـمـا سـاخـتـه شـد ✅</u></i>\n\n<b>📂 نام فایل :</b> <i>{}</i>\n\n<b>📦 حجم فایل :</b> <i>{}</i>\n\n<b>📥 لینک دانلود :</b> <i>{}</i>\n\n<b> 🖥پخش زنده  :</b> <i>{}</i>\n\n<b>🚸 توجه : لینک شما پس از 24 ساعت منقضی خواهد شد</b>""",
